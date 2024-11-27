@@ -8,7 +8,7 @@ from api.models import Book
 from api.serializers import BookSerializer
 
 
-@extend_schema(tags=["Книги"])
+@extend_schema(tags=["Books"])
 class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
